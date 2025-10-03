@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Новости лаборатории</title>
+  <meta name="description" content="Простой сайт для публикации новостей лаборатории.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Лаборатория • Новости</a>
+    <nav class="nav">
+      <a href="index.html">Новости</a>
+      <a href="#howto" id="howto-link">Как обновлять</a>
+    </nav>
+  </div>
+  <div class="container hero">
+    <h1>Новости лаборатории</h1>
+    <p>Публикуйте обновления о проектах, выступлениях, статьях и мероприятиях.</p>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Поиск по новостям…">
+    </div>
+  </div>
+</header>
+
+<main class="container" id="content">
+  <div id="news-list" class="grid"></div>
+  <div id="no-results" class="muted" style="display:none">Ничего не найдено.</div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <small>© <span id="year"></span> Лаборатория. Статический сайт: HTML + JSON.</small>
+    <a class="top-link" href="#">Наверх ↑</a>
+  </div>
+</footer>
+
+<div id="howto" class="howto" hidden>
+  <div class="howto__inner">
+    <button class="close" id="howto-close" aria-label="Закрыть">×</button>
+    <h2>Как обновлять новости</h2>
+    <ol>
+      <li>Откройте файл <code>data/news.json</code> в любом редакторе.</li>
+      <li>Добавьте объект в начало массива по образцу (см. примеры).</li>
+      <li>Сохраните и загрузите сайт на хостинг (GitHub Pages / Netlify / любой хостинг).</li>
+    </ol>
+    <p><strong>Поля:</strong> <code>id</code> (уникальная строка), <code>date</code> (YYYY-MM-DD), <code>title</code>, <code>summary</code>, <code>content</code> (HTML/микро‑Markdown), <code>tags</code> (массив строк), <code>cover</code> (необязательная картинка).</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
