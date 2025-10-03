@@ -1,55 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Новости лаборатории</title>
-  <meta name="description" content="Простой сайт для публикации новостей лаборатории.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Лаборатория огнестойких композитов — АРУ им. Жубанова</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">Лаборатория • Новости</a>
-    <nav class="nav">
-      <a href="index.html">Новости</a>
-      <a href="#howto" id="howto-link">Как обновлять</a>
+  <header>
+    <img src="assets/university_logo.png" alt="Университет Жубанова" class="logo">
+    <h1>Лаборатория огнестойких полимерных композитов</h1>
+    <nav>
+      <a href="#prof">Профессор</a>
+      <a href="#equipment">Оборудование</a>
+      <a href="#team">Команда</a>
+      <a href="#news">Новости</a>
     </nav>
-  </div>
-  <div class="container hero">
-    <h1>Новости лаборатории</h1>
-    <p>Публикуйте обновления о проектах, выступлениях, статьях и мероприятиях.</p>
-    <div class="search-wrap">
-      <input id="search" type="search" placeholder="Поиск по новостям…">
+  </header>
+
+  <section id="prof">
+    <h2>Руководитель</h2>
+    <img src="assets/professor.jpg" alt="Профессор Бекешев" class="photo">
+    <p><b>Профессор Бекешев Амирбек Зарлыкович</b><br>Доктор наук, руководитель лаборатории.<br>
+    Основное направление: огнестойкие полимерные композиты, гранты ПЦФ.</p>
+  </section>
+
+  <section id="equipment">
+    <h2>Оборудование лаборатории</h2>
+    <div class="gallery">
+      <img src="assets/equipment1.jpg" alt="Оборудование 1">
+      <img src="assets/equipment2.jpg" alt="Оборудование 2">
+      <img src="assets/equipment3.jpg" alt="Оборудование 3">
+      <img src="assets/equipment4.jpg" alt="Оборудование 4">
+      <img src="assets/equipment5.jpg" alt="Оборудование 5">
     </div>
-  </div>
-</header>
+  </section>
 
-<main class="container" id="content">
-  <div id="news-list" class="grid"></div>
-  <div id="no-results" class="muted" style="display:none">Ничего не найдено.</div>
-</main>
+  <section id="team">
+    <h2>Наша команда</h2>
+    <div class="team">
+      <div>
+        <img src="assets/member1.jpg" alt="Сотрудник 1">
+        <p>Ахметова Маржан Кушкинбаевна — старший специалист</p>
+      </div>
+      <div>
+        <img src="assets/member2.jpg" alt="Сотрудник 2">
+        <p>Ұзақбаева Сәнімай Сәндіғалиқызы
+ — лаборант</p>
+      </div>
+      <div>
+        <img src="assets/member3.jpg" alt="Сотрудник 3">
+        <p>Таймагамбетова Нұргүл Абдразаққызы
+ — лаборант</p>
+      </div>
+      <div>
+        <img src="assets/member4.jpg" alt="Сотрудник 4">
+        <p>ФИО — должность</p>
+      </div>
+      <div>
+        <img src="assets/member5.jpg" alt="Сотрудник 5">
+        <p>ФИО — должность</p>
+      </div>
+    </div>
+  </section>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <small>© <span id="year"></span> Лаборатория. Статический сайт: HTML + JSON.</small>
-    <a class="top-link" href="#">Наверх ↑</a>
-  </div>
-</footer>
+  <section id="news">
+    <h2>Новости</h2>
+    <ul>
+      <li><b>03.10.2025</b> — Запуск официального сайта лаборатории.</li>
+      <li><b>09.2025</b> — Получен грант ПЦФ по огнестойким композитам.</li>
+    </ul>
+  </section>
 
-<div id="howto" class="howto" hidden>
-  <div class="howto__inner">
-    <button class="close" id="howto-close" aria-label="Закрыть">×</button>
-    <h2>Как обновлять новости</h2>
-    <ol>
-      <li>Откройте файл <code>data/news.json</code> в любом редакторе.</li>
-      <li>Добавьте объект в начало массива по образцу (см. примеры).</li>
-      <li>Сохраните и загрузите сайт на хостинг (GitHub Pages / Netlify / любой хостинг).</li>
-    </ol>
-    <p><strong>Поля:</strong> <code>id</code> (уникальная строка), <code>date</code> (YYYY-MM-DD), <code>title</code>, <code>summary</code>, <code>content</code> (HTML/микро‑Markdown), <code>tags</code> (массив строк), <code>cover</code> (необязательная картинка).</p>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <footer>
+    <p>© 2025 Лаборатория огнестойких композитов, АРУ им. Жубанова</p>
+  </footer>
 </body>
 </html>
