@@ -1,37 +1,64 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="page-title">Новость • Лаборатория</title>
-  <meta name="description" content="Новость лаборатории">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Laboratory of Polymer Composites</title>
+
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html">Лаборатория • Новости</a>
-    <nav class="nav">
-      <a href="index.html">Все новости</a>
+
+<header>
+  <div class="header-inner">
+
+    <div class="logo-block">
+      <img src="assets/university_logo.png" alt="Zhubanov Logo" class="logo">
+      <div>
+        <h1 class="lab-title">Laboratory of Polymer Composites</h1>
+        <h2 class="lab-subtitle">K. Zhubanov Aktobe Regional University</h2>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="post.html">News</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#equipment">Equipment</a>
+
+      <a href="index.html">EN</a>
+      <a href="index-ru.html">RU</a>
+      <a href="index-kz.html">KZ</a>
     </nav>
+
   </div>
 </header>
 
-<main class="container article">
-  <article id="post">
-    <h1 id="title">Загрузка…</h1>
-    <div class="meta"><span id="date"></span> · <span id="tags"></span></div>
-    <img id="cover" class="cover" alt="" style="display:none">
-    <div id="content" class="content"></div>
-  </article>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a class="top-link" href="#">Наверх ↑</a>
+<section id="news" class="news-page">
+  <h2>News</h2>
+
+  <div class="news-card">
+    <h3>🚀 Official Launch of the Laboratory Website</h3>
+    <p><b>Date:</b> 03 October 2025</p>
+    <p>The Laboratory of Polymer Composites has officially launched its website, providing access to research projects, publications, equipment, and team members.</p>
   </div>
+
+  <div class="news-card">
+    <h3>🔥 New PCF Grant Awarded</h3>
+    <p><b>Date:</b> September 2025</p>
+    <p>The laboratory has received a new Program-Targeted Funding (PCF) grant focused on developing fire-resistant polymer composites using modified mineral fillers.</p>
+  </div>
+
+  <a href="index.html" class="back-home">← Back to Home</a>
+</section>
+
+
+<footer>
+  © 2025 Laboratory of Polymer Composites — K. Zhubanov Aktobe Regional University
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
