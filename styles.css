@@ -1,4 +1,5 @@
-/* --- GLOBAL WHITE ACADEMIC THEME --- */
+/* ================= GLOBAL WHITE ACADEMIC STYLE ================= */
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -6,23 +7,51 @@ body {
   color: #111111;
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
+
 header {
-  text-align: center;
-  padding: 40px 20px;
   background: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 10%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 75px;
+}
+
+.lab-title {
+  margin: 0;
+  font-size: 26px;
   color: #0c2d62;
 }
 
-header .logo {
-  width: 90px;
-  margin-bottom: 12px;
+.lab-subtitle {
+  margin: 2px 0;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.lab-address {
+  font-size: 14px;
+  color: #525252;
 }
 
 nav a {
-  margin: 0 10px;
-  padding: 6px 12px;
+  margin-left: 14px;
   text-decoration: none;
   color: #0c2d62;
   font-weight: 600;
@@ -32,15 +61,16 @@ nav a:hover {
   color: #174c9c;
 }
 
-/* HEAD OF LABORATORY */
+
+/* ================= HEAD OF LAB ================= */
+
 .leader-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
   padding: 40px 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
   background: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .leader-text {
@@ -49,82 +79,65 @@ nav a:hover {
 
 .leader-text h2 {
   color: #0c2d62;
-  margin-bottom: 12px;
-}
-
-.leader-text p {
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-.leader-photo {
-  flex: 0.7;
-  text-align: right;
+  margin-bottom: 10px;
 }
 
 .leader-photo img {
-  width: 250px;
+  width: 260px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* SECTION TITLES */
+
+/* ================= SECTION TITLES ================= */
+
 section h2 {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 15px;
   color: #0c2d62;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-/* GALLERY */
+
+/* ================= GALLERY ================= */
+
 .gallery {
+  padding: 0 12%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
-  padding: 0 12%;
 }
 
 .gallery img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
 
-/* TEAM */
-#team .team {
+
+/* ================= TEAM ================= */
+
+.team {
+  padding: 0 12%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
-  padding: 0 12%;
 }
 
-#team img {
+.team img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* NEWS */
-#news {
-  padding: 30px 12%;
-}
 
-#news ul {
-  padding-left: 20px;
-  font-size: 17px;
-  line-height: 1.6;
-}
+/* ================= FOOTER ================= */
 
-#news li {
-  margin-bottom: 10px;
-}
-
-/* FOOTER */
 footer {
+  background: #ffffff;
   text-align: center;
   padding: 25px;
-  margin-top: 40px;
-  background: #ffffff;
-  border-top: 1px solid #e6e6e6;
   color: #0c2d62;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
 }
