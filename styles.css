@@ -1,60 +1,55 @@
-/* --- PROFESSIONAL LAB STYLE --- */
-
+/* --- GLOBAL WHITE ACADEMIC THEME --- */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background-color: #f8f9fc;
-  color: #1a1a1a;
+  background: #ffffff;
+  color: #111111;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #0c2d62;
-  color: white;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  color: #0c2d62;
 }
 
 header .logo {
-  width: 100px;
-  margin-bottom: 15px;
+  width: 90px;
+  margin-bottom: 12px;
 }
 
 nav a {
   margin: 0 10px;
   padding: 6px 12px;
   text-decoration: none;
-  color: white;
-  border-radius: 5px;
+  color: #0c2d62;
   font-weight: 600;
-  border: 1px solid rgba(255,255,255,0.4);
 }
 
 nav a:hover {
-  background: rgba(255,255,255,0.2);
+  color: #174c9c;
 }
 
-/* --- LEADER SECTION --- */
-
-/* --- LEADER SECTION --- */
-
+/* HEAD OF LABORATORY */
 .leader-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   padding: 40px 12%;
-  background: white;
-  margin-top: 30px;
-  border-bottom: 1px solid #dcdcdc;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .leader-text {
-  flex: 1.2;
+  flex: 1.3;
 }
 
 .leader-text h2 {
   color: #0c2d62;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .leader-text p {
@@ -63,121 +58,73 @@ nav a:hover {
 }
 
 .leader-photo {
-  flex: 0.8;
+  flex: 0.7;
   text-align: right;
 }
 
 .leader-photo img {
-  width: 260px;
+  width: 250px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* SECTION TITLES */
+section h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #0c2d62;
+}
 
-/* --- TEAM SECTION BETTER STYLE --- */
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 12%;
+}
 
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TEAM */
 #team .team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
-  padding: 0 10%;
+  padding: 0 12%;
 }
 
 #team img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* --- SECTION HEADINGS --- */
+/* NEWS */
+#news {
+  padding: 30px 12%;
+}
 
-section h2 {
+#news ul {
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+#news li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: 50px;
+  padding: 25px;
+  margin-top: 40px;
+  background: #ffffff;
+  border-top: 1px solid #e6e6e6;
   color: #0c2d62;
 }
-/* Минимальный современный стиль без внешних библиотек */
-:root{
-  --bg:#0b0e14;
-  --panel:#121826;
-  --ink:#e6edf3;
-  --muted:#a3b3c2;
-  --brand:#4fd1c5;
-  --border:#233047;
-  --accent:#9ae6b4;
-  --shadow:0 10px 30px rgba(0,0,0,.25);
-}
-
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;
-  background:linear-gradient(180deg,var(--bg),#0c111b 40%, var(--bg));
-  color:var(--ink);
-  line-height:1.6;
-}
-
-.container{width:min(1050px,92%);margin-inline:auto}
-.site-header{
-  background:
-    radial-gradient(900px 400px at 20% 0%, rgba(79,209,197,.18), transparent 60%),
-    radial-gradient(900px 400px at 80% 0%, rgba(154,230,180,.12), transparent 60%);
-  border-bottom:1px solid var(--border);
-}
-.header-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.brand{color:var(--ink);text-decoration:none;font-weight:700}
-.nav a{color:var(--ink);text-decoration:none;margin-left:16px;opacity:.9}
-.nav a:hover{opacity:1}
-
-.hero{padding:28px 0 18px}
-h1{line-height:1.2;margin:0 0 .6em;font-size:clamp(26px,5vw,42px)}
-p{color:var(--muted);margin:0 0 1em}
-
-.search-wrap{margin-top:10px}
-#search{
-  width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);
-  background:#0a1120;color:var(--ink);outline:none;
-}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:24px 0 40px}
-.card{
-  background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;
-  box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px
-}
-.card img{width:100%;height:150px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
-.card h3{margin:.2em 0}
-.card .meta{color:var(--muted);font-size:.9em}
-.card a{color:var(--brand);text-decoration:none}
-.card a:hover{text-decoration:underline}
-
-.article{padding:28px 0 40px}
-.meta{color:var(--muted);margin-bottom:8px}
-.cover{width:100%;max-height:360px;object-fit:cover;border-radius:12px;border:1px solid var(--border);margin:8px 0 14px}
-.content p{color:var(--ink)}
-.content a{color:var(--brand)}
-
-.site-footer{border-top:1px solid var(--border);padding:16px 0;margin-top:20px}
-.footer-inner{display:flex;justify-content:space-between;align-items:center}
-.top-link{color:var(--ink);text-decoration:none;opacity:.8}
-.top-link:hover{opacity:1}
-
-.howto[hidden]{display:none}
-.howto{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:16px}
-.howto__inner{background:var(--panel);border:1px solid var(--border);border-radius:14px;max-width:720px;width:92%;padding:18px;box-shadow:var(--shadow)}
-.howto .close{float:right;border:0;background:transparent;color:var(--ink);font-size:24px;cursor:pointer}
-code{background:#0a1120;border:1px solid var(--border);padding:1px 6px;border-radius:6px}
-.muted{color:var(--muted)}
-body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-header { background:#003366; color:#fff; padding:20px; text-align:center; }
-header .logo { height:60px; display:block; margin:0 auto 10px; }
-nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; }
-nav a:hover { text-decoration:underline; }
-section { padding:40px 20px; max-width:1000px; margin:auto; }
-h2 { color:#003366; border-bottom:2px solid #003366; padding-bottom:5px; }
-.photo { max-width:200px; border-radius:10px; display:block; margin:20px auto; }
-.gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:15px; }
-.gallery img { width:100%; border-radius:10px; }
-.team { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:20px; text-align:center; }
-.team img { width:100%; border-radius:50%; }
-footer { background:#f4f4f4; text-align:center; padding:15px; font-size:14px; color:#333; }
