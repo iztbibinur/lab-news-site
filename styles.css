@@ -108,6 +108,10 @@ section h2 {
   gap: 20px;
 }
 
+.gallery figure {
+  margin: 0;
+}
+
 .gallery img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -115,6 +119,14 @@ section h2 {
   object-position: center;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.gallery figcaption {
+  text-align: center;
+  margin-top: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 
