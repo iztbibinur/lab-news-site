@@ -88,6 +88,27 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.profiles {
+  margin-top: 14px;
+}
+
+.profiles a {
+  display: inline-block;
+  margin: 0 10px 8px 0;
+  padding: 4px 14px;
+  border: 1px solid #0c2d62;
+  border-radius: 20px;
+  color: #0c2d62;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.profiles a:hover {
+  background: #0c2d62;
+  color: #ffffff;
+}
+
 
 /* ================= SECTION TITLES ================= */
 
