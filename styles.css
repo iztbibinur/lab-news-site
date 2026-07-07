@@ -169,6 +169,22 @@ section h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.team-links {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.team-links a {
+  color: #174c9c;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.team-links a:hover {
+  text-decoration: underline;
+}
+
 
 /* ================= ABOUT ================= */
 
