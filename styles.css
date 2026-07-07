@@ -110,6 +110,9 @@ section h2 {
 
 .gallery img {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 }
@@ -126,6 +129,9 @@ section h2 {
 
 .team img {
   width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
