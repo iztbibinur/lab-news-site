@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Фото будет добавлено">
+  <rect width="300" height="400" fill="#e9eef5"/>
+  <circle cx="150" cy="155" r="58" fill="#c3ccdb"/>
+  <path d="M64 345c0-52 39-92 86-92s86 40 86 92z" fill="#c3ccdb"/>
+</svg>
