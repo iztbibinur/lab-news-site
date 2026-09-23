@@ -125,7 +125,7 @@ section h2 {
 .gallery {
   padding: 0 12%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -320,5 +320,9 @@ footer {
   .team {
     padding-left: 6%;
     padding-right: 6%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
